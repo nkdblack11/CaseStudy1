@@ -6,7 +6,7 @@ function StyleCloud(style) {
                 y: 50,
                 width: 142,
                 height: 76,
-                src: './image/Cloud-01.png',
+                src: './public/image/Cloud-01.png',
             };
         case 1:
             return {
@@ -14,7 +14,7 @@ function StyleCloud(style) {
                 y: 20,
                 width: 169,
                 height: 89,
-                src: './image/Cloud-02.png',
+                src: './public/image/Cloud-02.png',
             };
         case 2:
             return {
@@ -22,7 +22,7 @@ function StyleCloud(style) {
                 y: 75,
                 width: 170,
                 height: 49,
-                src: './image/Cloud-03.png',
+                src: './public/image/Cloud-03.png',
             };
         case 3:
             return {
@@ -30,7 +30,7 @@ function StyleCloud(style) {
                 y: 10,
                 width: 195,
                 height: 85,
-                src: './image/Cloud-04.png',
+                src: './public/image/Cloud-04.png',
             };
         case 4:
             return {
@@ -38,7 +38,7 @@ function StyleCloud(style) {
                 y: 55,
                 width: 134,
                 height: 68,
-                src: './image/Cloud-05.png',
+                src: './public/image/Cloud-05.png',
             };
     }
 }
