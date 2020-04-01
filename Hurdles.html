@@ -9,6 +9,7 @@
     <script src="Cloud.js"></script>
     <script src="Stone.js"></script>
     <script src="Gecko.js"></script>
+    <script src="StartGame.js"></script>
 </head>
 <body>
 <div id="poit" style="font-size: 18px"></div>
@@ -16,41 +17,10 @@
 <script>
     let speed = 1;
     let point = 0;
+    let timer = '';
 
     const canvas = document.getElementById('myCanvas');
     const ctx = canvas.getContext('2d');
-
-    function StartGame(y) {
-        const rect = {x: 457, y: y, width: 110, heigth: 80};
-        arrStone = [];
-        arrStone.push({...stone});
-        let click = (evt) => {
-            if (evt.layerX > rect.x && evt.layerX < rect.x + rect.width && evt.layerY < rect.y + rect.heigth && evt.layerY > rect.y) {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                point = 0;
-                geckoTop = 3
-                LoadImg();
-                canvas.removeEventListener("click", click)
-            }
-        };
-
-
-        canvas.addEventListener('click', click)
-        ctx.beginPath();
-        ctx.rect(rect.x, rect.y, rect.width, rect.heigth);
-        ctx.fillStyle = 'rgba(225,225,225,0.5)';
-        ctx.fill();
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = 'red';
-        ctx.stroke();
-        ctx.closePath();
-        ctx.font = '40pt Kremlin Pro Web';
-        ctx.fillStyle = 'red';
-        ctx.fillText('Start', 460, y + 50);
-
-    }
-
-    StartGame(100);
 
     function LoadImg() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -67,7 +37,7 @@
             }
         }
         if (arrCloud[length2 - 1].x < 400) {
-            style2++
+            style2++;
             cloud.setStyle(StyleCloud(style2));
             arrCloud.push({...cloud});
             if (style2 === 4) {
@@ -79,7 +49,7 @@
         for (let j = 0; j < length1; j++) {
             // debugger;
             if (arrTree[j].x < -200) {
-                arrTree.splice(j, 1)
+                arrTree.splice(j, 1);
                 length1--
             }
             if (arrTree[j].status === 'left') {
@@ -90,8 +60,8 @@
         }
         if (arrTree[length1 - 1].x < -50) {
             style1++;
-            tree.setStyle(StyleCay(style1))
-            arrTree.push({...tree})
+            tree.setStyle(StyleCay(style1));
+            arrTree.push({...tree});
             if (style1 === 5) {
                 style1 = 0;
             }
@@ -120,7 +90,7 @@
             if (arrStone[r].x < -200) {
                 arrStone.splice(r, 1);
                 length3--
-                point ++;
+                point++;
             }
             if (arrStone[r].status === 'left') {
                 stoneImg.src = arrStone[r].src;
@@ -175,9 +145,36 @@
         ctx.fillText("Point: " + point, 50, 60);
 
         speed = speed + 0.001;
-        setTimeout(LoadImg, 10)
+        if (speed > 13) {
+            speed = 13;
+        }
+        timer = setTimeout(LoadImg, 10);
+
+        for (let z = 0; z < length3; z++) {
+            if (arrStone[z].x <= (gecko.x + gecko.width) &&
+                arrStone[z].x >= gecko.x &&
+                arrStone[z].y <= (gecko.y + gecko.height) &&
+                arrStone[z].y >= gecko.y) {
+
+                clearTimeout(timer)
+                StartGame(100);
+                ctx.fillText("Game Over", 390, 220);
+                break;
+            }
+            if (arrStone[z].x <= (gecko.x + gecko.width) &&
+                arrStone[z].x >= gecko.x &&
+                arrStone[z].y + (arrStone[z].height / 2) >= gecko.y &&
+                arrStone[z].y + (arrStone[z].height / 2) <= gecko.y + gecko.height) {
+
+                clearTimeout(timer)
+                StartGame(100);
+                ctx.fillText("Game Over", 390, 220);
+                break;
+            }
+        }
     }
 
+    StartGame(100);
 
     document.addEventListener('keyup', function (event) {
         if (event.keyCode === 32 && gecko.status !== 'down ') {
@@ -195,8 +192,6 @@
         }
     });
 
-
-    // LoadImg();
 
 </script>
 </body>
