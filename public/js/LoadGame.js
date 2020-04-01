@@ -92,103 +92,10 @@ function LoadImg() {
 
     if (gecko.status === 'run' && style4 % 2 === 0) {
         gecko.setStyle(StyleGecko(style4));
-        switch (style4) {
-            case 0:
-                ctx.drawImage(IMAGE0, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 2:
-                ctx.drawImage(IMAGE1, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 4:
-                ctx.drawImage(IMAGE2, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 6:
-                ctx.drawImage(IMAGE3, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 8:
-                ctx.drawImage(IMAGE4, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 10:
-                ctx.drawImage(IMAGE5, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 12:
-                ctx.drawImage(IMAGE6, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 14:
-                ctx.drawImage(IMAGE7, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 16:
-                ctx.drawImage(IMAGE8, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 18:
-                ctx.drawImage(IMAGE9, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 20:
-                ctx.drawImage(IMAGE10, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 22:
-                ctx.drawImage(IMAGE11, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 24:
-                ctx.drawImage(IMAGE12, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 26:
-                ctx.drawImage(IMAGE13, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 28:
-                ctx.drawImage(IMAGE14, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 30:
-                ctx.drawImage(IMAGE15, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 32:
-                ctx.drawImage(IMAGE16, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 34:
-                ctx.drawImage(IMAGE17, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 36:
-                ctx.drawImage(IMAGE18, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 38:
-                ctx.drawImage(IMAGE19, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 40:
-                ctx.drawImage(IMAGE20, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 42:
-                ctx.drawImage(IMAGE21, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 44:
-                ctx.drawImage(IMAGE22, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 46:
-                ctx.drawImage(IMAGE23, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 48:
-                ctx.drawImage(IMAGE24, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 50:
-                ctx.drawImage(IMAGE25, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 52:
-                ctx.drawImage(IMAGE26, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 54:
-                ctx.drawImage(IMAGE27, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 56:
-                ctx.drawImage(IMAGE28, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-            case 58:
-                ctx.drawImage(IMAGE29, gecko.x, gecko.y, gecko.width, gecko.height);
-                break;
-        }
     }
     if (gecko.status === 'up') {
         gecko.setTop(geckoTop);
         geckoTop = geckoTop - 6;
-        ctx.drawImage(IMAGE32, gecko.x, gecko.y, gecko.width, gecko.height);
         if (gecko.y < 70) {
             geckoTop = gecko.y
             gecko.setStatus(1)
@@ -199,13 +106,14 @@ function LoadImg() {
     if (gecko.status === 'down') {
         gecko.setTop(geckoTop);
         geckoTop = geckoTop + 6;
-        ctx.drawImage(IMAGE47, gecko.x, gecko.y, gecko.width, gecko.height);
         if (gecko.y >= 245) {
             style4 = 0;
             gecko.setStatus(3)
             gecko.setStyle(StyleGecko(style4));
         }
     }
+
+    ctx.drawImage(gecko.src, gecko.x, gecko.y, gecko.width, gecko.height);
     style4 = style4 + 2;
     if (style4 === 60) {
         style4 = 0;

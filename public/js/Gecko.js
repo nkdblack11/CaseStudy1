@@ -71,7 +71,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 78,
                 height: 76,
-                src: './public/image/Gecko-00.png',
+                src: IMAGE0,
             };
         case 2:
             return {
@@ -79,7 +79,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 79,
                 height: 76,
-                src: './public/image/Gecko-01.png',
+                src: IMAGE1,
             };
         case 4:
             return {
@@ -87,7 +87,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 80,
                 height: 76,
-                src: './public/image/Gecko-02.png',
+                src: IMAGE2,
             };
         case 6:
             return {
@@ -95,7 +95,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 80,
                 height: 76,
-                src: './public/image/Gecko-03.png',
+                src: IMAGE3,
             };
         case 8:
             return {
@@ -103,7 +103,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 81,
                 height: 76,
-                src: './public/image/Gecko-04.png',
+                src: IMAGE4,
             };
         case 10:
             return {
@@ -111,7 +111,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 84,
                 height: 75,
-                src: './public/image/Gecko-05.png',
+                src: IMAGE5,
             };
         case 12:
             return {
@@ -119,7 +119,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 81,
                 height: 75,
-                src: './public/image/Gecko-06.png',
+                src: IMAGE6,
             };
         case 14:
             return {
@@ -127,7 +127,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 80,
                 height: 74,
-                src: './public/image/Gecko-07.png',
+                src: IMAGE7,
             };
         case 16:
             return {
@@ -135,7 +135,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 83,
                 height: 76,
-                src: './public/image/Gecko-08.png',
+                src: IMAGE8,
             };
         case 18:
             return {
@@ -143,7 +143,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 94,
                 height: 77,
-                src: './public/image/Gecko-09.png',
+                src: IMAGE9,
             };
         case 20:
             return {
@@ -151,7 +151,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 101,
                 height: 74,
-                src: './public/image/Gecko-10.png',
+                src: IMAGE10,
             };
         case 22:
             return {
@@ -159,7 +159,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 108,
                 height: 75,
-                src: './public/image/Gecko-11.png',
+                src: IMAGE11,
             };
         case 24:
             return {
@@ -167,7 +167,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 96,
                 height: 74,
-                src: './public/image/Gecko-12.png',
+                src: IMAGE12,
             };
         case 26:
             return {
@@ -175,7 +175,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 91,
                 height: 75,
-                src: './public/image/Gecko-13.png',
+                src: IMAGE13,
             };
         case 28:
             return {
@@ -183,7 +183,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 85,
                 height: 75,
-                src: './public/image/Gecko-14.png',
+                src: IMAGE14,
             };
         case 30:
             return {
@@ -191,7 +191,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 78,
                 height: 74,
-                src: './public/image/Gecko-15.png',
+                src: IMAGE15,
             };
         case 32:
             return {
@@ -199,7 +199,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 78,
                 height: 74,
-                src: './public/image/Gecko-16.png',
+                src: IMAGE16,
             };
         case 34:
             return {
@@ -207,7 +207,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 78,
                 height: 75,
-                src: './public/image/Gecko-17.png',
+                src: IMAGE17,
             };
         case 36:
             return {
@@ -215,7 +215,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 76,
                 height: 77,
-                src: './public/image/Gecko-18.png',
+                src: IMAGE18,
             };
         case 38:
             return {
@@ -223,7 +223,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 74,
                 height: 75,
-                src: './public/image/Gecko-19.png',
+                src: IMAGE19,
             };
         case 40:
             return {
@@ -231,7 +231,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 77,
                 height: 77,
-                src: './public/image/Gecko-20.png',
+                src: IMAGE20,
             };
         case 42:
             return {
@@ -239,7 +239,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 77,
                 height: 76,
-                src: './public/image/Gecko-21.png',
+                src: IMAGE21,
             };
         case 44:
             return {
@@ -247,7 +247,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 77,
                 height: 76,
-                src: './public/image/Gecko-22.png',
+                src: IMAGE22,
             };
         case 46:
             return {
@@ -255,7 +255,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 77,
                 height: 74,
-                src: './public/image/Gecko-23.png',
+                src: IMAGE23,
             };
         case 48:
             return {
@@ -263,7 +263,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 80,
                 height: 72,
-                src: './public/image/Gecko-24.png',
+                src: IMAGE24,
             };
         case 50:
             return {
@@ -271,7 +271,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 90,
                 height: 72,
-                src: './public/image/Gecko-25.png',
+                src: IMAGE25,
             };
         case 52:
             return {
@@ -279,7 +279,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 97,
                 height: 69,
-                src: './public/image/Gecko-26.png',
+                src: IMAGE26,
             };
         case 54:
             return {
@@ -287,7 +287,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 98,
                 height: 72,
-                src: './public/image/Gecko-27.png',
+                src: IMAGE27,
             };
         case 56:
             return {
@@ -295,7 +295,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 97,
                 height: 76,
-                src: './public/image/Gecko-28.png',
+                src: IMAGE28,
             };
         case 58:
             return {
@@ -303,7 +303,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 97,
                 height: 76,
-                src: './public/image/Gecko-29.png',
+                src: IMAGE29,
             };
         case 62:
             return {
@@ -311,7 +311,7 @@ function StyleGecko(style) {
                 y: 240,
                 width: 73,
                 height: 64,
-                src: './public/image/Gecko-32.png',
+                src: IMAGE32,
             };
         case 64:
             return {
@@ -319,7 +319,7 @@ function StyleGecko(style) {
                 y: 230,
                 width: 57,
                 height: 83,
-                src: './public/image/Gecko-47.png',
+                src: IMAGE47,
             };
     }
 }
