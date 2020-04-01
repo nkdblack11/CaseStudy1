@@ -1,0 +1,9 @@
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType public/image "access plus 1 year"
+ExpiresByType public/image/png "access plus 1 year"
+ExpiresByType public/js "access plus 1 year"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 7 days"
+</IfModule>
