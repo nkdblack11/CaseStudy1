@@ -149,6 +149,7 @@
             speed = 13;
         }
         timer = setTimeout(LoadImg, 10);
+        console.log(speed)
 
         for (let z = 0; z < length3; z++) {
             if (arrStone[z].x <= (gecko.x + gecko.width) &&
@@ -159,6 +160,7 @@
                 clearTimeout(timer)
                 StartGame(100);
                 ctx.fillText("Game Over", 390, 220);
+                speed = 1;
                 break;
             }
             if (arrStone[z].x <= (gecko.x + gecko.width) &&
@@ -169,6 +171,7 @@
                 clearTimeout(timer)
                 StartGame(100);
                 ctx.fillText("Game Over", 390, 220);
+                speed = 1;
                 break;
             }
         }
