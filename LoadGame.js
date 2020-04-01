@@ -94,13 +94,12 @@ function LoadImg() {
         gecko.setStyle(StyleGecko(style4));
     }
     if (gecko.status === 'up') {
-        // debugger;
         gecko.setTop(geckoTop);
         geckoTop = geckoTop - 6;
         if (gecko.y < 70) {
             geckoTop = gecko.y
             gecko.setStatus(1)
-            gecko.setStyle(StyleGecko(98))
+            gecko.setStyle(StyleGecko(64))
             // debugger;
         }
     }
@@ -174,7 +173,7 @@ document.addEventListener('keyup', function (event) {
     if (event.keyCode === 32 && gecko.status !== 'down ') {
         geckoTop = gecko.y
         gecko.setStatus(1)
-        gecko.setStyle(StyleGecko(94))
+        gecko.setStyle(StyleGecko(64))
         gecko.setTop(geckoTop);
     }
 });

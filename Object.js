@@ -36,6 +36,5 @@ let object = function (x, y, width, height, status) {
         this.width = style.width;
         this.height = style.height;
         this.src = style.src;
-        console.log('style')
     }
 };

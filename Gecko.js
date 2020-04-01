@@ -244,153 +244,17 @@ function StyleGecko(style) {
             return {
                 x: 10,
                 y: 240,
-                width: 70,
-                height: 57,
-                src: './img/Gecko-31.png',
-            };
-        case 64:
-            return {
-                x: 10,
-                y: 240,
                 width: 73,
                 height: 64,
                 src: './img/Gecko-32.png',
             };
-        case 66:
-            return {
-                x: 10,
-                y: 240,
-                width: 81,
-                height: 70,
-                src: './img/Gecko-33.png',
-            };
-        case 68:
-            return {
-                x: 10,
-                y: 240,
-                width: 81,
-                height: 76,
-                src: './img/Gecko-34.png',
-            };
-        case 70:
-            return {
-                x: 10,
-                y: 240,
-                width: 76,
-                height: 78,
-                src: './img/Gecko-35.png',
-            };
-        case 72:
-            return {
-                x: 10,
-                y: 240,
-                width: 75,
-                height: 81,
-                src: './img/Gecko-36.png',
-            };
-        case 74:
-            return {
-                x: 10,
-                y: 240,
-                width: 72,
-                height: 84,
-                src: './img/Gecko-37.png',
-            };
-        case 76:
-            return {
-                x: 10,
-                y: 240,
-                width: 75,
-                height: 81,
-                src: './img/Gecko-38.png',
-            };
-        case 78:
-            return {
-                x: 10,
-                y: 240,
-                width: 78,
-                height: 79,
-                src: './img/Gecko-39.png',
-            };
-        case 80:
-            return {
-                x: 10,
-                y: 240,
-                width: 82,
-                height: 76,
-                src: './img/Gecko-40.png',
-            };
-        case 82:
-            return {
-                x: 10,
-                y: 240,
-                width: 70,
-                height: 85,
-                src: './img/Gecko-41.png',
-            };
-        case 84:
-            return {
-                x: 10,
-                y: 230,
-                width: 61,
-                height: 87,
-                src: './img/Gecko-42.png',
-            };
-        case 86:
-            return {
-                x: 10,
-                y: 230,
-                width: 56,
-                height: 81,
-                src: './img/Gecko-43.png',
-            };
-        case 88:
-            return {
-                x: 10,
-                y: 230,
-                width: 59,
-                height: 83,
-                src: './img/Gecko-44.png',
-            };
-        case 90:
-            return {
-                x: 10,
-                y: 230,
-                width: 60,
-                height: 85,
-                src: './img/Gecko-45.png',
-            };
-        case 92:
-            return {
-                x: 10,
-                y: 230,
-                width: 59,
-                height: 83,
-                src: './img/Gecko-46.png',
-            };
-        case 94:
+        case 64:
             return {
                 x: 10,
                 y: 230,
                 width: 57,
                 height: 83,
                 src: './img/Gecko-47.png',
-            };
-        case 96:
-            return {
-                x: 10,
-                y: 230,
-                width: 65,
-                height: 83,
-                src: './img/Gecko-48.png',
-            };
-        case 98:
-            return {
-                x: 10,
-                y: 230,
-                width: 74,
-                height: 81,
-                src: './img/Gecko-49.png',
             };
     }
 }
