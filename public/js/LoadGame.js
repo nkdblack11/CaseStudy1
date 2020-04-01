@@ -133,10 +133,10 @@ function LoadImg() {
 
     timer = setTimeout(LoadImg, 10);
 
-    const c2 = {}
+    const c2 = {};
 
-    c2.x = gecko.x + (gecko.width / 2)
-    c2.y = gecko.y + (gecko.height / 2)
+    c2.x = gecko.x + (gecko.width / 2);
+    c2.y = gecko.y + (gecko.height / 2);
     if(gecko.width < gecko.height){
         c2.radius = gecko.width / 2
     }else {
@@ -144,7 +144,7 @@ function LoadImg() {
     }
 
     for (let z = 0; z < length3; z++) {
-        const c1 = {}
+        const c1 = {};
 
         c1.x = arrStone[z].x + (arrStone[z].width / 2)
         c1.y = arrStone[z].y + (arrStone[z].height / 2)

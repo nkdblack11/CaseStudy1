@@ -3,7 +3,7 @@ const styleTrail = {
     y: 310,
     width: 340,
     height: 32,
-    src: './img/Ground-0.png',
+    src: './public/image/Ground-0.png',
 };
 
 const trail = new object(0, 1285, 310, 32, 'left');

@@ -6,7 +6,7 @@ function StyleStone(style) {
                 y: 235,
                 width: 77,
                 height: 82,
-                src: './img/Stone-00.png',
+                src: './public/image/Stone-00.png',
             };
         case 1:
             return {
@@ -14,7 +14,7 @@ function StyleStone(style) {
                 y: 230,
                 width: 75,
                 height: 90,
-                src: './img/Stone-02.png',
+                src: './public/image/Stone-02.png',
             };
         case 2:
             return {
@@ -22,7 +22,7 @@ function StyleStone(style) {
                 y: 230,
                 width: 125,
                 height: 89,
-                src: './img/Stone-03.png',
+                src: './public/image/Stone-03.png',
             };
         case 3:
             return {
@@ -30,7 +30,7 @@ function StyleStone(style) {
                 y: 230,
                 width: 74,
                 height: 93,
-                src: './img/Stone-04.png',
+                src: './public/image/Stone-04.png',
             };
         case 4:
             return {
@@ -38,7 +38,7 @@ function StyleStone(style) {
                 y: 227,
                 width: 76,
                 height: 92,
-                src: './img/Stone-05.png',
+                src: './public/image/Stone-05.png',
             };
         case 5:
             return {
@@ -46,7 +46,7 @@ function StyleStone(style) {
                 y: 235,
                 width: 76,
                 height: 85,
-                src: './img/Stone-06.png',
+                src: './public/image/Stone-06.png',
             };
         case 6:
             return {
@@ -54,7 +54,7 @@ function StyleStone(style) {
                 y: 245,
                 width: 74,
                 height: 77,
-                src: './img/Stone-07.png',
+                src: './public/image/Stone-07.png',
             };
         case 7:
             return {
@@ -62,7 +62,7 @@ function StyleStone(style) {
                 y: 230,
                 width: 76,
                 height: 87,
-                src: './img/Stone-08.png',
+                src: './public/image/Stone-08.png',
             };
         case 8:
             return {
@@ -70,7 +70,7 @@ function StyleStone(style) {
                 y: 240,
                 width: 84,
                 height: 87,
-                src: './img/Stone-09.png',
+                src: './public/image/Stone-09.png',
             };
         case 9:
             return {
@@ -78,7 +78,7 @@ function StyleStone(style) {
                 y: 235,
                 width: 82,
                 height: 90,
-                src: './img/Stone-11.png',
+                src: './public/image/Stone-11.png',
             };
         case 10:
             return {
@@ -86,7 +86,7 @@ function StyleStone(style) {
                 y: 230,
                 width: 74,
                 height: 95,
-                src: './img/Stone-13.png',
+                src: './public/image/Stone-13.png',
             };
         case 11:
             return {
@@ -94,7 +94,7 @@ function StyleStone(style) {
                 y: 227,
                 width: 76,
                 height: 97,
-                src: './img/Stone-14.png',
+                src: './public/image/Stone-14.png',
             };
     }
 }
