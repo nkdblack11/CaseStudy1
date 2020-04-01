@@ -6,7 +6,7 @@ function StyleCay(style) {
                 y: 282,
                 width: 195,
                 height: 29,
-                src: './public/image/Fence.png',
+                src: './image/Fence.png',
             };
         case 1:
             return {
@@ -14,7 +14,7 @@ function StyleCay(style) {
                 y: 167,
                 width: 142,
                 height: 146,
-                src: './public/image/Plant-0.png',
+                src: './image/Plant-0.png',
             };
         case 2:
             return {
@@ -22,7 +22,7 @@ function StyleCay(style) {
                 y: 220,
                 width: 38,
                 height: 93,
-                src: './public/image/Rock-0.png',
+                src: './image/Rock-0.png',
             };
         case 3:
             return {
@@ -30,7 +30,7 @@ function StyleCay(style) {
                 y: 273,
                 width: 59,
                 height: 41,
-                src: './public/image/Rock-1.png',
+                src: './image/Rock-1.png',
             };
         case 4:
             return {
@@ -38,7 +38,7 @@ function StyleCay(style) {
                 y: 180,
                 width: 127,
                 height: 132,
-                src: './public/image/Plant-1.png',
+                src: './image/Plant-1.png',
             };
         case 5:
             return {
@@ -46,7 +46,7 @@ function StyleCay(style) {
                 y: 287,
                 width: 46,
                 height: 28,
-                src: './public/image/Rock-2.png',
+                src: './image/Rock-2.png',
             };
     }
 }
