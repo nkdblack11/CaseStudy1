@@ -6,7 +6,8 @@ function StartGame(y) {
         if (evt.layerX > rect.x && evt.layerX < rect.x + rect.width && evt.layerY < rect.y + rect.heigth && evt.layerY > rect.y) {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             point = 0;
-            geckoTop = 3
+            geckoTop = 0;
+            speed = 1;
             LoadImg();
             canvas.removeEventListener("click", click)
         }

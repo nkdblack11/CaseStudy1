@@ -95,22 +95,25 @@ function LoadImg() {
     }
     if (gecko.status === 'up') {
         gecko.setTop(geckoTop);
-        geckoTop = geckoTop - 6;
+        geckoTop = geckoTop - 4;
         if (gecko.y < 70) {
             geckoTop = gecko.y
             gecko.setStatus(1)
             gecko.setStyle(StyleGecko(64))
-            // debugger;
         }
+        geckoTop = geckoTop - 2 - (speed / 100)
+        console.log('up', geckoTop)
     }
     if (gecko.status === 'down') {
         gecko.setTop(geckoTop);
-        geckoTop = geckoTop + 6;
+        geckoTop = geckoTop + 4;
         if (gecko.y >= 245) {
             style4 = 0;
             gecko.setStatus(3)
             gecko.setStyle(StyleGecko(style4));
         }
+        geckoTop = geckoTop + 2 + (speed / 100)
+        console.log('down', geckoTop)
     }
 
     ctx.drawImage(gecko.src, gecko.x, gecko.y, gecko.width, gecko.height);

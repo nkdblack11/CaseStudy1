@@ -100,7 +100,7 @@ function StyleStone(style) {
 }
 
 let style3 = 0;
-const stone = new object(1100, 255, 77, 67, 'left');
+const stone = new Object(1100, 255, 77, 67, 'left');
 let arrStone = [];
 const stoneImg = new Image();
 stone.setStyle(StyleStone(style3));

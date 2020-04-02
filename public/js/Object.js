@@ -1,4 +1,4 @@
-let object = function (x, y, width, height, status) {
+let Object = function (x, y, width, height, status) {
     this.x = x;
     this.y = y;
     this.width = width;

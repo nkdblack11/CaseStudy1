@@ -6,7 +6,7 @@ const styleTrail = {
     src: './public/image/Ground-0.png',
 };
 
-const trail = new object(0, 1285, 310, 32, 'left');
+const trail = new Object(0, 1285, 310, 32, 'left');
 const arrTrail = [];
 const trailImg = new Image();
 trail.setStyle(styleTrail);

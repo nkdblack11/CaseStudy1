@@ -44,7 +44,7 @@ function StyleCloud(style) {
 }
 
 let style2 = 0;
-const cloud = new object(1100, 50, 142, 76, 'left');
+const cloud = new Object(1100, 50, 142, 76, 'left');
 const arrCloud = [];
 const cloudImg = new Image();
 cloud.setStyle(StyleCloud(style2));

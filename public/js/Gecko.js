@@ -326,5 +326,5 @@ function StyleGecko(style) {
 
 let style4 = 0;
 let geckoTop = 0;
-let gecko = new object(10, 247, 65, 85, 'run');
+let gecko = new Object(10, 247, 65, 85, 'run');
 gecko.setStyle(StyleGecko(style4));

@@ -52,7 +52,7 @@ function StyleCay(style) {
 }
 
 let style1 = 0;
-const tree = new object(1100, 282, 195, 29, 'left');
+const tree = new Object(1100, 282, 195, 29, 'left');
 const arrTree = [];
 const treeImg = new Image();
 tree.setStyle(StyleCay(style1));
