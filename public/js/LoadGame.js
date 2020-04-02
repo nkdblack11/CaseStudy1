@@ -14,9 +14,8 @@ function LoadImg() {
             length2--
         }
         if (arrCloud[t].status === 'left') {
-            cloudImg.src = arrCloud[t].src;
             arrCloud[t].setX(-1 - (speed));
-            ctx.drawImage(cloudImg, arrCloud[t].x, arrCloud[t].y, arrCloud[t].width, arrCloud[t].height);
+            ctx.drawImage(arrCloud[t].image, arrCloud[t].x, arrCloud[t].y, arrCloud[t].width, arrCloud[t].height);
         }
     }
     if (arrCloud[length2 - 1].x < 400) {
@@ -36,9 +35,8 @@ function LoadImg() {
             length1--
         }
         if (arrTree[j].status === 'left') {
-            treeImg.src = arrTree[j].src;
             arrTree[j].setX(-4 - (speed));
-            ctx.drawImage(treeImg, arrTree[j].x, arrTree[j].y, arrTree[j].width, arrTree[j].height);
+            ctx.drawImage(arrTree[j].image, arrTree[j].x, arrTree[j].y, arrTree[j].width, arrTree[j].height);
         }
     }
     if (arrTree[length1 - 1].x < -50) {
@@ -57,9 +55,8 @@ function LoadImg() {
             length--;
         }
         if (arrTrail[i].status === 'left') {
-            trailImg.src = arrTrail[i].src;
             arrTrail[i].setX(-4 - (speed));
-            ctx.drawImage(trailImg, arrTrail[i].x, arrTrail[i].y, arrTrail[i].width, arrTrail[i].height)
+            ctx.drawImage(arrTrail[i].image, arrTrail[i].x, arrTrail[i].y, arrTrail[i].width, arrTrail[i].height)
         }
     }
     if (arrTrail[length - 1].x + arrTrail[length - 1].width < 1310) {
@@ -76,9 +73,8 @@ function LoadImg() {
             point++;
         }
         if (arrStone[r].status === 'left') {
-            stoneImg.src = arrStone[r].src;
             arrStone[r].setX(-4 - (speed));
-            ctx.drawImage(stoneImg, arrStone[r].x, arrStone[r].y, arrStone[r].width, arrStone[r].height);
+            ctx.drawImage(arrStone[r].image, arrStone[r].x, arrStone[r].y, arrStone[r].width, arrStone[r].height);
         }
     }
     if (arrStone[length3 - 1].x < 142) {
@@ -116,7 +112,7 @@ function LoadImg() {
         console.log('down', geckoTop)
     }
 
-    ctx.drawImage(gecko.src, gecko.x, gecko.y, gecko.width, gecko.height);
+    ctx.drawImage(gecko.image, gecko.x, gecko.y, gecko.width, gecko.height);
     style4 = style4 + 2;
     if (style4 === 60) {
         style4 = 0;

@@ -1,3 +1,14 @@
+const IMG_CLOUD_1  = new Image();
+IMG_CLOUD_1.src="./public/image/Cloud-01.png";
+const IMG_CLOUD_2  = new Image();
+IMG_CLOUD_2.src="./public/image/Cloud-02.png";
+const IMG_CLOUD_3  = new Image();
+IMG_CLOUD_3.src="./public/image/Cloud-03.png";
+const IMG_CLOUD_4  = new Image();
+IMG_CLOUD_4.src="./public/image/Cloud-04.png";
+const IMG_CLOUD_5  = new Image();
+IMG_CLOUD_5.src="./public/image/Cloud-05.png";
+
 function StyleCloud(style) {
     switch (style) {
         case 0:
@@ -6,7 +17,7 @@ function StyleCloud(style) {
                 y: 50,
                 width: 142,
                 height: 76,
-                src: './public/image/Cloud-01.png',
+                image: IMG_CLOUD_1,
             };
         case 1:
             return {
@@ -14,7 +25,7 @@ function StyleCloud(style) {
                 y: 20,
                 width: 169,
                 height: 89,
-                src: './public/image/Cloud-02.png',
+                image: IMG_CLOUD_2,
             };
         case 2:
             return {
@@ -22,7 +33,7 @@ function StyleCloud(style) {
                 y: 75,
                 width: 170,
                 height: 49,
-                src: './public/image/Cloud-03.png',
+                image: IMG_CLOUD_3,
             };
         case 3:
             return {
@@ -30,7 +41,7 @@ function StyleCloud(style) {
                 y: 10,
                 width: 195,
                 height: 85,
-                src: './public/image/Cloud-04.png',
+                image: IMG_CLOUD_4,
             };
         case 4:
             return {
@@ -38,7 +49,7 @@ function StyleCloud(style) {
                 y: 55,
                 width: 134,
                 height: 68,
-                src: './public/image/Cloud-05.png',
+                image: IMG_CLOUD_5,
             };
     }
 }

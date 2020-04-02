@@ -4,7 +4,7 @@ let Object = function (x, y, width, height, status) {
     this.width = width;
     this.height = height;
     this.status = status;
-    this.src = '';
+    this.image = '';
     this.setStatus = function (number) {
         switch (number) {
             case 0:
@@ -35,6 +35,6 @@ let Object = function (x, y, width, height, status) {
         this.y = style.y;
         this.width = style.width;
         this.height = style.height;
-        this.src = style.src;
+        this.image = style.image;
     }
 };
